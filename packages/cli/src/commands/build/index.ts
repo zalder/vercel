@@ -12,6 +12,7 @@ import {
   FileFsRef,
   NowBuildError,
   validateNpmrc,
+  download,
   type Files,
   type PackageJson,
   type BuildOptions,
