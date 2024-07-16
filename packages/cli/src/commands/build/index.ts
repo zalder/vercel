@@ -581,6 +581,13 @@ async function doBuild(
           err => err
         )
       );
+
+      ops.push(
+        download(diagnostics, join(outputDir, 'diagnostics')).then(
+          () => undefined,
+          err => err
+        )
+      );
     } catch (err: any) {
       const buildJsonBuild = buildsJsonBuilds.get(build);
       if (buildJsonBuild) {
