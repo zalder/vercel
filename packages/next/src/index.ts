@@ -2752,7 +2752,7 @@ export const diagnostics: Diagnostics = async ({
     // Collect output in `.next/diagnostics`
     ...(await glob(
       'diagnostics/*',
-      path.join(basePath, diagnosticsEntrypoint, outputDirectory, 'diagnostics')
+      path.join(basePath, diagnosticsEntrypoint, outputDirectory)
     )),
     // Collect `.next/trace` file
     ...(await glob(
